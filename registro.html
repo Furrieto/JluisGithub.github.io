@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - SimpliciLink</title>
+    <link rel="stylesheet" href="css/registro.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="registrovali.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1 id="logo">SimpliciLink<img id="icon" src="iconos\icon.png" href="index.html" ></h1>
+        <!--Aquí comienza la barra de busqueda-->
+<div class="search-container">
+    <!-- HTML -->
+<input type="text" id="searchInput" oninput="search()" placeholder="Buscar...">
+<div id="searchResults" class="search-results-container"></div>
+
+        <!-- Aquí se mostrarán los resultados de la búsqueda -->
+    </div>
+</div>
+<script src="BarraBusqueda.js"></script>
+<!--Y Aquí termina-->
+        <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="login.html">Iniciar Sesion</a></li>
+            <li><a href="educacion.html">Educación de Seguridad</a>
+            <li><a href="contacto.html">Contáctanos</a></li>
+            <li><a href="acerca.html">Mas Informacion</a>
+                <ul>
+                    <li><a href="acerca.html">Acerca de nosotros</a></li>
+                    <li><a href="terminos.html">Terminos y condiciones</a></li>
+                    <li><a href="descargas.html">Descargas</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    </header>
+
+    <div class="container">
+        <h2>Registro</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+</body>
+</html>
