@@ -51,7 +51,7 @@
                 <p>¿No tienes cuenta? <a href="registro.html">Regístrate</a></p> <!-- Enlace a la página de registro -->
             </form>
             <form action="?" method="POST">
-                <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                <div class="g-recaptcha" data-sitekey="6Lc81aApAAAAAEYHF2NxXjkxFvcygmKBwaE3-z71"></div>
                 <br/>
                 <input type="submit" value="Submit">
               </form>
@@ -103,15 +103,6 @@
 
 
     </script>
-    <script>
-        function onClick(e) {
-          e.preventDefault();
-          grecaptcha.enterprise.ready(async () => {
-            const token = await grecaptcha.enterprise.execute('6LedEpgpAAAAAOfLKlrxcVj4CSS9-fUL70rfK8nP', {action: 'LOGIN'});
-          });
-        }
-      </script>
-
 </body>
 
 </html>
